@@ -19,13 +19,6 @@ Semester project on fiber-reinforced dielectric elastomer actuators (DEAs). This
 - Calculates strain values based on actuator geometry (30mm × 70mm)
 - Detects ON/OFF periods and extracts steady-state behavior
 
-### Data
-
-**`Contractile 2_60°_0g 7000V 11.11 15h04m04s.csv`**
-- Example measurement file (60° fiber angle, no load, 7kV applied voltage)
-- Format: semicolon-separated, comma as decimal separator
-- Columns: Time (s), Voltage (kV), Laser displacement (mm)
-
 ### Videos
 
 **`demo1_60_degree_0g_load_8kV.mp4`** and **`demo2_60_degree_0g_load_8kV.mp4.mp4`**
@@ -63,7 +56,7 @@ The script processes CSV files in the current directory and generates:
 - Strain calculations
 - Organized output by fiber angle
 
-Expected CSV filename format:
+**Expected CSV filename format:**
 ```
 Name_Angle°_Number_Weight Voltage Date Time.csv
 ```
@@ -72,6 +65,14 @@ Example:
 ```
 Contractile 2_60°_0g 7000V 11.11 15h04m04s.csv
 ```
+
+**Expected CSV file structure:**
+- Separator: semicolon (`;`)
+- Decimal separator: comma (`,`)
+- Required columns:
+  - `Time (s)` - timestamp in seconds
+  - `Voltage (kV)` - applied voltage in kilovolts
+  - `Laser (mm)` - displacement measurement in millimeters
 
 ## Parameters
 
